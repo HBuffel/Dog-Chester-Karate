@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("0eef1f9e-69c1-46f8-92bf-27331ff8d719",{name:"QOT"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:"intellij:1.7.0.299"});
+  }
+});
+</script>
+
+    <title>src.test.java.dog_api.tests.dogApi</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-03-17 08:53:11 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[2:14]"><span>[2:14]</span> <span>Search Breeds by Name</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/dog_api/tests/dogApi.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">TheDogAPI Test</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:14]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:14]</span>
+                <span class="scenario-name">Search Breeds by Name</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>2261</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:14]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:14]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://api.thedogapi.com/v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">08:53:08.875 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:14]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">873</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:14]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-api-key = &#39;live_Pei0UXjVT3GYrLcSawxV4JWzXZdvenzaPumMFWy3FbLnr59bmQNzrqFFF5T5hyGd&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/breeds/search&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param q = &#39;husky&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1319</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">08:53:10.080 request:
+1 &gt; GET https://api.thedogapi.com/v1/breeds/search?q=husky
+1 &gt; x-api-key: live_Pei0UXjVT3GYrLcSawxV4JWzXZdvenzaPumMFWy3FbLnr59bmQNzrqFFF5T5hyGd
+1 &gt; Host: api.thedogapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+08:53:11.117 response time in milliseconds: 1032
+1 &lt; 200
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; vary: Origin
+1 &lt; retry-after-seconds: 60
+1 &lt; ratelimit-limit: 120
+1 &lt; ratelimit-remaining: 119
+1 &lt; ratelimit-consumed: 1
+1 &lt; ratelimit-reset: 2023-03-17T06:54:13.444Z
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-response-time: 135ms
+1 &lt; X-Cloud-Trace-Context: 51d2f7b634fb4e133781351242830ed1;o=1
+1 &lt; Date: Fri, 17 Mar 2023 06:53:13 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Content-Length: 614
+[{&quot;weight&quot;:{&quot;imperial&quot;:&quot;38 - 50&quot;,&quot;metric&quot;:&quot;17 - 23&quot;},&quot;height&quot;:{&quot;imperial&quot;:&quot;23 - 26&quot;,&quot;metric&quot;:&quot;58 - 66&quot;},&quot;id&quot;:8,&quot;name&quot;:&quot;Alaskan Husky&quot;,&quot;bred_for&quot;:&quot;Sled pulling&quot;,&quot;breed_group&quot;:&quot;Mixed&quot;,&quot;life_span&quot;:&quot;10 - 13 years&quot;,&quot;temperament&quot;:&quot;Friendly, Energetic, Loyal, Gentle, Confident&quot;,&quot;reference_image_id&quot;:&quot;-HgpNnGXl&quot;},{&quot;weight&quot;:{&quot;imperial&quot;:&quot;35 - 60&quot;,&quot;metric&quot;:&quot;16 - 27&quot;},&quot;height&quot;:{&quot;imperial&quot;:&quot;20 - 23.5&quot;,&quot;metric&quot;:&quot;51 - 60&quot;},&quot;id&quot;:226,&quot;name&quot;:&quot;Siberian Husky&quot;,&quot;bred_for&quot;:&quot;Sled pulling&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;life_span&quot;:&quot;12 years&quot;,&quot;temperament&quot;:&quot;Outgoing, Friendly, Alert, Gentle, Intelligent&quot;,&quot;reference_image_id&quot;:&quot;S17ZilqNm&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref failed">19</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response contains {name: &#39;husky&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">64</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">08:53:11.255 src/test/java/dog_api/tests/dogApi.feature:19
+And match response contains {name: &#39;husky&#39;}
+match failed: CONTAINS
+  $ | actual does not contain expected | actual array does not contain expected item - {&quot;name&quot;:&quot;husky&quot;} (LIST:MAP)
+  [{&quot;weight&quot;:{&quot;imperial&quot;:&quot;38 - 50&quot;,&quot;metric&quot;:&quot;17 - 23&quot;},&quot;height&quot;:{&quot;imperial&quot;:&quot;23 - 26&quot;,&quot;metric&quot;:&quot;58 - 66&quot;},&quot;id&quot;:8,&quot;name&quot;:&quot;Alaskan Husky&quot;,&quot;bred_for&quot;:&quot;Sled pulling&quot;,&quot;breed_group&quot;:&quot;Mixed&quot;,&quot;life_span&quot;:&quot;10 - 13 years&quot;,&quot;temperament&quot;:&quot;Friendly, Energetic, Loyal, Gentle, Confident&quot;,&quot;reference_image_id&quot;:&quot;-HgpNnGXl&quot;},{&quot;weight&quot;:{&quot;imperial&quot;:&quot;35 - 60&quot;,&quot;metric&quot;:&quot;16 - 27&quot;},&quot;height&quot;:{&quot;imperial&quot;:&quot;20 - 23.5&quot;,&quot;metric&quot;:&quot;51 - 60&quot;},&quot;id&quot;:226,&quot;name&quot;:&quot;Siberian Husky&quot;,&quot;bred_for&quot;:&quot;Sled pulling&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;life_span&quot;:&quot;12 years&quot;,&quot;temperament&quot;:&quot;Outgoing, Friendly, Alert, Gentle, Intelligent&quot;,&quot;reference_image_id&quot;:&quot;S17ZilqNm&quot;}]
+  {&quot;name&quot;:&quot;husky&quot;}
+
+    $[1] | not equal | actual has 8 more key(s) than expected - {&quot;weight&quot;:{&quot;imperial&quot;:&quot;35 - 60&quot;,&quot;metric&quot;:&quot;16 - 27&quot;},&quot;height&quot;:{&quot;imperial&quot;:&quot;20 - 23.5&quot;,&quot;metric&quot;:&quot;51 - 60&quot;},&quot;id&quot;:226,&quot;bred_for&quot;:&quot;Sled pulling&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;life_span&quot;:&quot;12 years&quot;,&quot;temperament&quot;:&quot;Outgoing, Friendly, Alert, Gentle, Intelligent&quot;,&quot;reference_image_id&quot;:&quot;S17ZilqNm&quot;} (MAP:MAP)
+    {&quot;weight&quot;:{&quot;imperial&quot;:&quot;35 - 60&quot;,&quot;metric&quot;:&quot;16 - 27&quot;},&quot;height&quot;:{&quot;imperial&quot;:&quot;20 - 23.5&quot;,&quot;metric&quot;:&quot;51 - 60&quot;},&quot;id&quot;:226,&quot;name&quot;:&quot;Siberian Husky&quot;,&quot;bred_for&quot;:&quot;Sled pulling&quot;,&quot;breed_group&quot;:&quot;Working&quot;,&quot;life_span&quot;:&quot;12 years&quot;,&quot;temperament&quot;:&quot;Outgoing, Friendly, Alert, Gentle, Intelligent&quot;,&quot;reference_image_id&quot;:&quot;S17ZilqNm&quot;}
+    {&quot;name&quot;:&quot;husky&quot;}
+
+    $[0] | not equal | actual has 8 more key(s) than expected - {&quot;weight&quot;:{&quot;imperial&quot;:&quot;38 - 50&quot;,&quot;metric&quot;:&quot;17 - 23&quot;},&quot;height&quot;:{&quot;imperial&quot;:&quot;23 - 26&quot;,&quot;metric&quot;:&quot;58 - 66&quot;},&quot;id&quot;:8,&quot;bred_for&quot;:&quot;Sled pulling&quot;,&quot;breed_group&quot;:&quot;Mixed&quot;,&quot;life_span&quot;:&quot;10 - 13 years&quot;,&quot;temperament&quot;:&quot;Friendly, Energetic, Loyal, Gentle, Confident&quot;,&quot;reference_image_id&quot;:&quot;-HgpNnGXl&quot;} (MAP:MAP)
+    {&quot;weight&quot;:{&quot;imperial&quot;:&quot;38 - 50&quot;,&quot;metric&quot;:&quot;17 - 23&quot;},&quot;height&quot;:{&quot;imperial&quot;:&quot;23 - 26&quot;,&quot;metric&quot;:&quot;58 - 66&quot;},&quot;id&quot;:8,&quot;name&quot;:&quot;Alaskan Husky&quot;,&quot;bred_for&quot;:&quot;Sled pulling&quot;,&quot;breed_group&quot;:&quot;Mixed&quot;,&quot;life_span&quot;:&quot;10 - 13 years&quot;,&quot;temperament&quot;:&quot;Friendly, Energetic, Loyal, Gentle, Confident&quot;,&quot;reference_image_id&quot;:&quot;-HgpNnGXl&quot;}
+    {&quot;name&quot;:&quot;husky&quot;}
+
+
+src/test/java/dog_api/tests/dogApi.feature:19
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

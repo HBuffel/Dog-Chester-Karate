@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/dog_api\/tests\/dogApi[1:8]","start":1679036237694,"end":1679036240675,"title":"src\/test\/java\/dog_api\/tests\/dogApi[1:8] 08:57:17.694-08:57:20.675 Get Breeds List","className":"failed"},{"id":2,"group":1,"content":"src\/test\/java\/dog_api\/tests\/dogApi[2:14]","start":1679036240844,"end":1679036240922,"title":"src\/test\/java\/dog_api\/tests\/dogApi[2:14] 08:57:20.844-08:57:20.922 Search Breeds by Name","className":"failed"},{"id":3,"group":1,"content":"src\/test\/java\/dog_api\/tests\/dogApi[3:21]","start":1679036240936,"end":1679036241867,"title":"src\/test\/java\/dog_api\/tests\/dogApi[3:21] 08:57:20.936-08:57:21.867 Get Random Dog Image","className":"failed"},{"id":4,"group":1,"content":"src\/test\/java\/dog_api\/tests\/dogApi[4:29]","start":1679036241885,"end":1679036242576,"title":"src\/test\/java\/dog_api\/tests\/dogApi[4:29] 08:57:21.885-08:57:22.576 Get Categories List","className":"failed"},{"id":5,"group":1,"content":"src\/test\/java\/dog_api\/tests\/dogApi[5:35]","start":1679036242584,"end":1679036243226,"title":"src\/test\/java\/dog_api\/tests\/dogApi[5:35] 08:57:22.584-08:57:23.226 Get Images by Breed","className":"failed"},{"id":6,"group":1,"content":"src\/test\/java\/dog_api\/tests\/dogApi[6:42]","start":1679036243234,"end":1679036244022,"title":"src\/test\/java\/dog_api\/tests\/dogApi[6:42] 08:57:23.234-08:57:24.022 Add Image to Favorites","className":"failed"},{"id":7,"group":1,"content":"src\/test\/java\/dog_api\/tests\/dogApi[7:48]","start":1679036244028,"end":1679036247068,"title":"src\/test\/java\/dog_api\/tests\/dogApi[7:48] 08:57:24.028-08:57:27.068 Get Favorite Images","className":"failed"},{"id":8,"group":1,"content":"src\/test\/java\/dog_api\/tests\/dogApi[8:54]","start":1679036247077,"end":1679036247898,"title":"src\/test\/java\/dog_api\/tests\/dogApi[8:54] 08:57:27.077-08:57:27.898 Vote for an Image"},{"id":9,"group":1,"content":"src\/test\/java\/dog_api\/tests\/dogApi[9:61]","start":1679036247904,"end":1679036249848,"title":"src\/test\/java\/dog_api\/tests\/dogApi[9:61] 08:57:27.904-08:57:29.848 Get Votes for an Image","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

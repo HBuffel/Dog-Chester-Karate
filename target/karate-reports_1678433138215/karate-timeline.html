@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/users\/pets[1.1:10]","start":1678361529148,"end":1678361532427,"title":"src\/test\/java\/examples\/users\/pets[1.1:10] 13:32:09.148-13:32:12.427 Find pet by status"},{"id":2,"group":1,"content":"src\/test\/java\/examples\/users\/pets[1.2:11]","start":1678361532440,"end":1678361533214,"title":"src\/test\/java\/examples\/users\/pets[1.2:11] 13:32:12.440-13:32:13.214 Find pet by status"},{"id":3,"group":1,"content":"src\/test\/java\/examples\/users\/pets[1.3:12]","start":1678361533228,"end":1678361533997,"title":"src\/test\/java\/examples\/users\/pets[1.3:12] 13:32:13.228-13:32:13.997 Find pet by status"},{"id":4,"group":1,"content":"src\/test\/java\/examples\/users\/pets[2:14]","start":1678361534010,"end":1678361535243,"title":"src\/test\/java\/examples\/users\/pets[2:14] 13:32:14.010-13:32:15.243 Find pet by status","className":"failed"},{"id":5,"group":1,"content":"src\/test\/java\/examples\/users\/pets[3:21]","start":1678361535330,"end":1678361535363,"title":"src\/test\/java\/examples\/users\/pets[3:21] 13:32:15.330-13:32:15.363 Delete a pet","className":"failed"},{"id":6,"group":1,"content":"src\/test\/java\/examples\/users\/pets[4:28]","start":1678361535379,"end":1678361536164,"title":"src\/test\/java\/examples\/users\/pets[4:28] 13:32:15.379-13:32:16.164 Find pet by status"},{"id":7,"group":1,"content":"src\/test\/java\/examples\/users\/pets[5:35]","start":1678361536194,"end":1678361537015,"title":"src\/test\/java\/examples\/users\/pets[5:35] 13:32:16.194-13:32:17.015 Update an existing pet"},{"id":8,"group":1,"content":"src\/test\/java\/examples\/users\/pets[6:42]","start":1678361537023,"end":1678361537832,"title":"src\/test\/java\/examples\/users\/pets[6:42] 13:32:17.023-13:32:17.832 Update an existing pet"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
